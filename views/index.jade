@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .page-header
+        h1= title
+        p Welcome to #{title}
+
+    .row
+        .col.md-4
+            .list-group
+                a.list-group-item(href="./observer") Observer
+                a.list-group-item(href="./tracker") Tracker
